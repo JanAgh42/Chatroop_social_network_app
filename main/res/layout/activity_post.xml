@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent2">
+
+    <include
+        layout="@layout/app_toolbar"
+        android:id="@+id/post_toolbar"/>
+    
+    <ScrollView
+        android:id="@+id/main_con"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/post_toolbar">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="30dp">
+    
+    <ImageButton
+        android:id="@+id/post_select_image"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/colorAccent2"
+        android:onClick="sendToGallery"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/ic_crop_free_black_24dp" />
+
+    <EditText
+        android:id="@+id/post_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_design"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:ems="10"
+        android:hint="Zdieľajte svoje myšlienky s priatelmi..."
+        android:inputType="textMultiLine" />
+
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/post_helper_text"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="380dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/ic_reply_dark_24dp"
+            android:rotation="50"
+            android:layout_marginLeft="130dp"/>
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:text="Vyberte si obrázok"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:rotation="10"/>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/send_post_button"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_above="@+id/main_con"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorPrimary"
+        android:baselineAlignBottom="false"
+        android:focusableInTouchMode="false"
+        android:onClick="uploadPost"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/ic_send_white_24dp" />
+
+</RelativeLayout>

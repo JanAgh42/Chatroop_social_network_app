@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/profile_settings_add"
+        android:title="Pridať príspevok" />
+
+    <item
+        android:id="@+id/profile_settings_unblock"
+        android:title="Odblokovať používateľa"/>
+
+    <item
+        android:id="@+id/profile_settings_set"
+        android:title="Nastavenia"/>
+
+    <item
+        android:id="@+id/profile_settings_mess"
+        android:title="Napísať správu"/>
+
+    <item
+        android:id="@+id/profile_settings_block"
+        android:title="Zablokovať užívateľa"/>
+
+    <item
+        android:id="@+id/profile_settings_rep"
+        android:title="Nahlásiť užívateľa"/>
+</menu>

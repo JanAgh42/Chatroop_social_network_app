@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "862292544738",
+    "firebase_url": "https://chatroop-1c6f0.firebaseio.com",
+    "project_id": "chatroop-1c6f0",
+    "storage_bucket": "chatroop-1c6f0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:862292544738:android:8423340dbb32fa1e1022bb",
+        "android_client_info": {
+          "package_name": "com.example.chatroop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "862292544738-ag4ohpvlir41rt1vu2q9o87p1ugu049h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.chatroop",
+            "certificate_hash": "c88c2474fe12046e71bd5ce92fc870aebc7b4d2d"
+          }
+        },
+        {
+          "client_id": "862292544738-j17vlv2kpi5s71hsomf6im3uu5fkq3cl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGZE0FxC4zLs-sdLTSScCsrNgQ6tn84_w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "862292544738-j17vlv2kpi5s71hsomf6im3uu5fkq3cl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

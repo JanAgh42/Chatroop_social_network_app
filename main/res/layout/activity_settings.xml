@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/settings_toolbar"
+        layout="@layout/app_toolbar"/>
+
+    <ScrollView
+        android:id="@+id/settings_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/settings_toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Celé meno:"
+            android:textSize="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/settings_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_design"
+            android:layout_below="@id/username"/>
+
+            <TextView
+                android:id="@+id/nickname"
+                android:layout_below="@id/settings_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Používateľské meno:"
+                android:textSize="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/settings_nickname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/button_design"
+                android:layout_below="@id/nickname"/>
+
+            <TextView
+                android:id="@+id/birthdate"
+                android:layout_below="@id/settings_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dátum narodenia:"
+                android:textSize="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/settings_birthdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:inputType="textMultiLine"
+                android:background="@drawable/button_design"
+                android:layout_below="@id/birthdate"/>
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_below="@id/settings_birthdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status:"
+                android:textSize="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/settings_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:inputType="textMultiLine"
+                android:background="@drawable/button_design"
+                android:layout_below="@id/status"/>
+
+            <TextView
+                android:id="@+id/country"
+                android:layout_below="@id/settings_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Krajina:"
+                android:textSize="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <Spinner
+                android:id="@+id/settings_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/country"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_design"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:ems="10"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                android:id="@+id/gender"
+                android:layout_below="@id/settings_country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pohlavie:"
+                android:textSize="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <Spinner
+                android:id="@+id/settings_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gender"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_design"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:ems="10"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                android:id="@+id/relationship"
+                android:layout_below="@id/settings_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vzťah:"
+                android:textSize="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <Spinner
+                android:id="@+id/settings_relationship"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relationship"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_design"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:ems="10"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="30dp"
+                />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/send_post_button"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_above="@+id/settings_scroll"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorPrimary"
+        android:baselineAlignBottom="false"
+        android:focusableInTouchMode="false"
+        android:onClick="saveInfoChanges"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/ic_done_white_24dp" />
+
+</RelativeLayout>

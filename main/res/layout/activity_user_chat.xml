@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorInput">
+
+    <include layout="@layout/app_toolbar"
+        android:id="@+id/chat_toolbar"/>
+
+    <LinearLayout
+        android:id="@+id/chat_options"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorInput"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/chat_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginStart="70dp"
+            android:hint="Napíšte správu..."
+            android:background="@drawable/button_design" />
+
+        <ImageButton
+            android:id="@+id/chat_send_message"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="70dp"
+            android:background="@drawable/button_design"
+            app:srcCompat="@drawable/ic_send_black_24dp"
+            android:onClick="sendChatMessage"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/chat_separator"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorPrimary"
+        android:layout_above="@id/chat_options"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chat_messages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/chat_toolbar"
+        android:layout_above="@id/chat_separator">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+<de.hdodenhof.circleimageview.CircleImageView
+    android:id="@+id/chat_user_image"
+    android:layout_width="35dp"
+    android:layout_height="35dp"
+    android:layout_above="@id/chat_messages"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentRight="true"
+    android:layout_marginBottom="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:onClick="switchToProfile"
+    android:src="@drawable/avatar"
+    app:civ_border_width="1dp"
+    app:civ_border_color="@color/colorPrimaryDark"
+    android:baselineAlignBottom="false" /> />
+
+</RelativeLayout>

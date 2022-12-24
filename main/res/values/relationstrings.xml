@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="relationship_array">
+
+        <item>Vyberte si vzťah</item>
+        <item>Nezadaný/á</item>
+        <item>Vo vzťahu</item>
+        <item>Rozvedený/á</item>
+        <item>Je to komplikované</item>
+        <item>Ovdovený/á</item>
+        <item>Ženatý/á</item>
+
+    </string-array>
+
+</resources>

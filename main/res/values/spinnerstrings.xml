@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="report_array">
+        <item>Vyberte dôvod</item>
+        <item>Nevhodný obsah</item>
+        <item>Porušenie pravidiel</item>
+        <item>Spam</item>
+        <item>Iné</item>
+    </string-array>
+
+</resources>

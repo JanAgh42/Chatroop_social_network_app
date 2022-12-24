@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/comment_settings_del"
+        android:title="Zmazat komentár"/>
+
+    <item
+        android:id="@+id/comment_settings_report"
+        android:title="Nahlásit komentár"/>
+
+    <item
+        android:id="@+id/comment_settings_edit"
+        android:title="Upraviť komentár" />
+
+</menu>

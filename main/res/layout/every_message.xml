@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+  <TextView
+      android:id="@+id/chat_his_message"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Message"
+      android:padding="10dp"
+      android:layout_gravity="start"
+      android:textColor="#000000"
+      android:maxWidth="260dp"
+      android:background="@drawable/message_design_new"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/chat_my_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Message"
+            android:padding="10dp"
+            android:textColor="#FFFFFF"
+            android:maxWidth="260dp"
+            android:layout_gravity="end"
+            android:background="@drawable/message_design"/>
+
+</LinearLayout>
+
+</RelativeLayout>

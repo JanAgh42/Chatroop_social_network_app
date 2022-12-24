@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/set_picture"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:civ_border_width="1dp"
+        app:civ_border_color="@color/colorAccent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:onClick="setProfilePicture"
+        android:src="@drawable/avatar"/>
+
+    <LinearLayout
+        android:id="@+id/set_anim_one"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_below="@id/set_picture"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/ic_reply_black_24dp"
+            android:rotation="50"
+            android:layout_marginLeft="130dp"/>
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:text="Vyberte si profilový obrázok"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:rotation="10"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/set_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/set_picture"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorAccent"
+        android:ems="10"
+        android:background="@drawable/input_design"
+        android:hint="Používateľské meno"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:drawableStart="@drawable/ic_create_black_24dp"
+        android:drawableLeft="@drawable/ic_create_black_24dp"
+        android:drawablePadding="7dp"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/set_realname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/set_username"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorAccent"
+        android:background="@drawable/input_design"
+        android:hint="Celé meno"
+        android:padding="10dp"
+        android:ems="10"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:drawableStart="@drawable/ic_create_black_24dp"
+        android:drawableLeft="@drawable/ic_create_black_24dp"
+        android:drawablePadding="7dp"
+        android:inputType="textMultiLine" />
+
+    <Spinner
+        android:id="@+id/set_country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/set_realname"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/country_design"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="32dp"
+        android:paddingStart="32dp"
+        android:ems="10"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <Button
+        android:id="@+id/set_button"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/set_country"
+        android:padding="10dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/second_button_design"
+        android:onClick="saveInformation"
+        android:text="Uložit informácie"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

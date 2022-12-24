@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ChaTroop</string>
+    <string name="drawer_open">Drawer open</string>
+    <string name="drawer_close">Drawer close</string>
+    <string name="email_address">Emailová adresa</string>
+    <string name="password">Heslo</string>
+    <string name="confirm_password">Zopakovať heslo</string>
+    <string name="create_account">Vytvoriť účet</string>
+    <string name="log_into_account">Prihlásiť sa</string>
+    <string name="facebook">Facebook</string>
+    <string name="google">Google</string>
+    <string name="twitter">Twitter</string>
+    <string name="log_toregister_text">Nemáte účet? Vytvorte si!</string>
+    <string name="info_text">Alebo sa prihláste s:</string>
+    <string name="reg_tologin_text">Máte už účet? Prihláste sa!</string>
+</resources>

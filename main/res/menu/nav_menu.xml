@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_search"
+        android:title="Vyhľadávanie"
+        android:icon="@drawable/ic_search_black_24dp"/>
+    <item
+        android:id="@+id/nav_profile"
+        android:title="Profil"
+        android:icon="@drawable/ic_account_circle_black_24dp"/>
+    <item
+        android:id="@+id/nav_messages"
+        android:title="Správy"
+        android:icon="@drawable/ic_message_black_24dp"/>
+    <item
+        android:id="@+id/nav_post"
+        android:title="Nový príspevok"
+        android:icon="@drawable/ic_add_circle_black_24dp"/>
+    <item
+        android:id="@+id/nav_home"
+        android:title="Domov"
+        android:icon="@drawable/ic_home_black_24dp"/>
+    <item
+        android:id="@+id/nav_settings"
+        android:title="Nastavenia"
+        android:icon="@drawable/ic_build_black_24dp"/>
+    <item
+        android:id="@+id/nav_log_out"
+        android:title="Odhlásiť sa"
+        android:icon="@drawable/ic_power_settings_new_black_24dp"/>
+
+</menu>

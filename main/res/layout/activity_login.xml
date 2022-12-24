@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <ImageView
+        android:id="@+id/app_logo_login"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/apk_logo"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:id="@+id/log_email_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/app_logo_login"
+        android:background="@drawable/input_design"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorAccent"
+        android:ems="10"
+        android:hint="@string/email_address"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:drawableStart="@drawable/ic_email_black_24dp"
+        android:drawableLeft="@drawable/ic_email_black_24dp"
+        android:drawablePadding="7dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <EditText
+        android:id="@+id/log_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_design"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorAccent"
+        android:padding="10dp"
+        android:drawableStart="@drawable/ic_lock_black_24dp"
+        android:drawableLeft="@drawable/ic_lock_black_24dp"
+        android:drawablePadding="7dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/log_email_add"/>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/log_pass"
+        android:layout_marginTop="40dp"
+        android:gravity="center">
+
+    <Button
+        android:id="@+id/log_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:padding="10dp"
+        android:background="@drawable/second_button_design"
+        android:onClick="userLogIn"
+        android:text="@string/log_into_account"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/log_toregister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_design"
+            android:onClick="sendToRegister"
+            android:padding="10dp"
+            android:text="Registrovať"
+            android:textColor="@color/colorAccent"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/info_text"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/log_netw"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:orientation="horizontal"
+        android:layout_marginTop="17dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/log_fb"
+            android:contentDescription="@string/facebook"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/fb_icon" />
+
+        <ImageView
+            android:id="@+id/log_go"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/go_icon"
+            android:contentDescription="@string/google"
+            android:onClick="googleLogIn" />
+
+        <ImageView
+            android:id="@+id/log_tw"
+            android:contentDescription="@string/twitter"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/tw_icon"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/log_reset_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/log_netw"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:onClick="resetPassword"
+        android:text="Zabudli ste heslo?"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp" />
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_color_green"
+        android:title="Zelená" />
+
+    <item
+        android:id="@+id/nav_color_yellow"
+        android:title="Žltá"/>
+
+    <item
+        android:id="@+id/nav_color_red"
+        android:title="Červená"/>
+
+    <item
+        android:id="@+id/nav_color_blue"
+        android:title="Modrá"/>
+
+    <item
+        android:id="@+id/nav_color_cyan"
+        android:title="Tyrkysová"/>
+
+    <item
+        android:id="@+id/nav_color_pink"
+        android:title="Ružová"/>
+</menu>
